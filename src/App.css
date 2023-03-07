@@ -1,0 +1,134 @@
+/* custom style  */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+    outline: none;
+}
+body {
+    background-color: beige;
+}
+nav {
+    background-color: rgb(235, 155, 155);
+    height: 8vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+.NavLink {
+    color: black;
+    margin: 15px;
+    transition: all 0.3s;
+}
+.NavLink:hover {
+    color: white;
+}
+.active {
+    color: rgb(207, 0, 0);
+}
+main {
+    min-height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+h1 {
+    text-align: center;
+    margin: 3rem;
+}
+table {
+    margin: 3rem;
+    border-collapse: collapse;
+}
+
+td,
+th {
+    border: 1px solid;
+    padding: 1rem;
+}
+
+button {
+    width: 5rem;
+    margin: 0.5rem;
+    padding: 0.2rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+button:hover {
+    background-color: black;
+    color: white;
+}
+.form {
+    background-color: antiquewhite;
+    padding: 0.5rem;
+    border-radius: 1rem;
+}
+
+.form-field {
+    margin: 0.5rem;
+}
+input {
+    width: 18rem;
+    height: 2.2rem;
+    border-radius: 10px;
+    padding: 0.2rem;
+}
+
+footer {
+    background-color: rgb(0, 0, 0);
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.2rem;
+    color: white;
+}
+
+.Article-section {
+    background-color: rgb(202, 206, 210);
+    margin: 5rem;
+    display: grid;
+    grid-column: auto auto;
+    padding: 2rem;
+    border-radius: 1rem;
+}
+
+.article {
+    width: 320px;
+    margin: 10px;
+    padding: 15px;
+    border: 1px solid black;
+    color: white;
+    background-color: black;
+    border-radius: 10px;
+}
+
+@media screen and (max-width: 600px) {
+    .Article-section {
+        display: grid;
+        grid-template-columns: auto;
+    }
+}
+@media screen and (min-width: 600px) {
+    .Article-section {
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+}
+@media screen and (min-width: 900px) {
+    .Article-section {
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+}
+
+.btn-holder {
+    margin-top: 1rem;
+}
+
+.btn:hover {
+    background-color: brown;
+}
